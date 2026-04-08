@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thenu Smartphone Shop</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: #f5f5f5;
+    }
+
+    .hero {
+      background: linear-gradient(45deg, #0d6efd, #00c6ff);
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .card {
+      border-radius: 15px;
+      transition: 0.3s;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      height: 180px;
+      object-fit: contain;
+    }
+
+    .footer {
+      background: #222;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .btn-custom {
+      border-radius: 25px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand">📱 Thenu Shop</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#products">Phones</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Branches">Branches</a></li>
+      </ul>
+    </div>
+
+    <button class="btn btn-warning ms-2" id="viewCart">
+      Cart (<span id="cartCount">0</span>)
+    </button>
+  </div>
+</nav>
+
+<!-- Hero -->
+<div class="hero">
+  <h1>Welcome to Thenu Smartphone Shop</h1>
+  <p>Best Deals on Latest Smartphones</p>
+</div>
+
+<!-- Products -->
+<div class="container mt-4" id="products">
+  <h3 class="text-center mb-3">Our Phones</h3>
+  <div class="row g-3">
+
+    <!-- Phone 1 -->
+    <div class="col-6 col-md-4">
+      <div class="card p-2">
+        <img src="https://m.media-amazon.com/images/I/61cwywLZR-L._AC_SL1500_.jpg">
+        <h6>iPhone 14</h6>
+        <small>128GB | A15 Bionic | 12MP Camera</small>
+        <p class="fw-bold">Rs.100,000,000</p>
+        <button class="btn btn-primary addCart" data-name="iPhone 14" data-price="800">Add</button>
+      </div>
+    </div>
+
+    <!-- Phone 2 -->
+    <div class="col-6 col-md-4">
+      <div class="card p-2">
+        <img src="https://m.media-amazon.com/images/I/61VfL-aiToL._AC_SL1500_.jpg">
+        <h6>Samsung S23</h6>
+        <small>256GB | Snapdragon 8 Gen2 | 50MP</small>
+        <p class="fw-bold">Rs.90,000,000</p>
+        <button class="btn btn-primary addCart" data-name="Samsung S23" data-price="750">Add</button>
+      </div>
+    </div>
+
+    <!-- Phone 3 -->
+    <div class="col-6 col-md-4">
+      <div class="card p-2">
+        <img src="https://m.media-amazon.com/images/I/71tCOhEigtL._AC_SL1500_.jpg">
+        <h6>Redmi Note 12</h6>
+        <small>128GB | Snapdragon | 48MP</small>
+        <p class="fw-bold">Rs.50,000,000</p>
+        <button class="btn btn-primary addCart" data-name="Redmi Note 12" data-price="300">Add</button>
+      </div>
+    </div>
+<!-- Phone 4 -->
+<div class="col-6 col-md-4">
+    <div class="card p-2">
+      <img src="https://images.openai.com/static-rsc-4/EV7_QYr35Ce3qRFD7bzSfGGcuMUTIia_--9vIsdpd9BQ_woR_Vi7K5cz6ndJ4qYvzIGjGlB5364DW9bKimfF4AlcX1_ZP44m569BT5uN9y17-ke2M7pzXkEEeWKUOrLCDjh1VzppUOPGB_QoEKzD8jNIR6tdn7Rsh5RwAPLEHy_zMgnTsFX7DTqIzcUbLnJU?purpose=fullsize">
+      <h6>Samsung S24</h6>
+      <small>512GB | Snapdragon 8 Gen2 | 50MP</small>
+      <p class="fw-bold">Rs.100,000,000</p>
+      <button class="btn btn-primary addCart" data-name="Samsung S23" data-price="750">Add</button>
+    </div>
+  </div>
+<!-- Phone 5 -->
+<div class="col-6 col-md-4">
+  <div class="card p-2">
+    <img src="https://images.openai.com/static-rsc-4/A_o6Nk9B5fCmhPWSGpQa9a4VGYzK-tnXC8ZH4KAQBcMpcAjzA2kH7DADIUZxDdMFugN0gKUjK8Ao5PVFlObVHAHMRdVhFpbK2YrNmM-qj0ioNl20So_XoclWDy5F3QE0l1OrdcBBddUBnGrRL6Xq7Z85Pt53z-mtyvnxc6XMSBLl-X-bBzDI4YoZWUPxAInp?purpose=fullsize">
+    <h6>Redmi Note 25</h6>
+    <small>256GB | Snapdragon | 48MP</small>
+    <p class="fw-bold">Rs.50,000,000</p>
+    <button class="btn btn-primary addCart" data-name="i phone 16pro" data-price="300">Add</button>
+  </div>
+</div>
+ <!-- Phone 6 -->
+ <div class="col-6 col-md-4">
+  <div class="card p-2">
+    <img src="https://images.openai.com/static-rsc-4/szLF7shy3_V-Y4wYpx6EoUn5dgHqImWWFRUdIbQQFkfZxuw9XCydnrlZfpwa-Jv7w-VDWddP-PqoVDX4joE8x7a4YWCt4AsAcOSUvq_Q84J4-Bgf47JxXzmV_w-G1_mikSQLfFZukNyiqpK2HBg-DOy4dpgQhR5nzsRuBFHoR0VU1yiyauvGGxrod_Ec_Bo1?purpose=fullsize">
+    <h6>Redmi Note 12</h6>
+    <small>128GB | Snapdragon | 48MP</small>
+    <p class="fw-bold">Rs.90,000,000</p>
+    <button class="btn btn-primary addCart" data-name="Redmi Note 12" data-price="300">Add</button>
+  </div>
+</div>
+ <!-- Phone 7 -->
+ <div class="col-6 col-md-4">
+  <div class="card p-2">
+    <img src="https://images.openai.com/static-rsc-4/gguZ63_6p1DDUCMjnhq8nTCZNEJ0MCWfb71FrUhKdsCSnJANh6prrbZsRUEHnnr_byAEHcupudXRVzDynxjM_uj8nP7ogKyciYAI_XlWWzxm0rZtaZHRuV6ZXSpSI6ySvDd4lMlkPyNjCbi0eEDFgGi6j_85MZeZ0oEY8t2ixxl0_rRvI490N0pKDDHnac5q?purpose=fullsize">
+    <h6>Redmi Note 12</h6>
+    <small>128GB | Snapdragon | 48MP</small>
+    <p class="fw-bold">Rs.80,000,000</p>
+    <button class="btn btn-primary addCart" data-name="Samsung A15" data-price="300">Add</button>
+  </div>
+</div>
+ <!-- Phone 8 -->
+ <div class="col-6 col-md-4">
+  <div class="card p-2">
+    <img src="https://images.openai.com/static-rsc-4/I-xm-GS3-i3uNi61Ns4nxZuQ7E5xORtNBjIjLhz7caDb-a17wbQZQubElVP-bsTh1bMehETdw51dCUXXyAiWWOdBCIo7r7Ubxw64JYgVih_Momu22cKMFTablPnmEIouthzynKQHhewAI8fXx4tGGcdOEsPkiKSMNkUBfvipZ9Mcbul3E1IyCIBkosOfKC42?purpose=fullsize">
+    <h6>Redmi Note 12</h6>
+    <small>128GB | Snapdragon | 48MP</small>
+    <p class="fw-bold">Rs.700,000,000</p>
+    <button class="btn btn-primary addCart" data-name="i phone" data-price="300">Add</button>
+  </div>
+</div>
+ <!-- Phone 9 -->
+ <div class="col-6 col-md-4">
+  <div class="card p-2">
+    <img src="https://images.openai.com/static-rsc-4/Q4VpRRwJ96QPrJRfGDzzvm994C62s7zg-XBCsFpJtHazG9arjlpY3zF3DwxhEN5d2YTXe6up62uKc2NGvd0nblvRCo4B3XdWZ-u_Yg-bPZ0hOBJxTVqLW_AN4uqnDKXafJOhrABE61YrYtuIofO5VgOlqSnnhEt-RhATZuLIiZSJsPTl0siWcFX-Ua36cXfp?purpose=fullsize">
+    <h6>Redmi Note 12</h6>
+    <small>128GB | Snapdragon | 48MP</small>
+    <p class="fw-bold">Rs.60,000,000</p>
+    <button class="btn btn-primary addCart" data-name="Samsung" data-price="300">Add</button>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- About -->
+<div class="container mt-5" id="about">
+  <h3 class="text-center">About Us</h3>
+  <p class="text-center">
+    Thenu Smartphone Shop offers the latest smartphones at the best prices.  
+    We provide quality products, warranty, and excellent customer service.
+  </p>
+</div>
+<!-- Branches -->
+<div class="container mt-5" id="Branches">
+  <h4 class="text-center mb-4">Our Branches</h4>
+
+  <div class="row g-4">
+
+    <div class="col-12 col-md-4">
+      <div class="card p-3 h-100 text-center">
+        <h6>Nallur Branch</h6>
+        <p class="mb-1">Nallur Road, Nallur</p>
+        <p class="mb-1">Jaffna</p>
+        <p class="text-primary">021-345-3456</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4">
+      <div class="card p-3 h-100 text-center">
+        <h6>Chunnakam Branch</h6>
+        <p class="mb-1">K.K.S Road, Chunnakam</p>
+        <p class="mb-1">Jaffna</p>
+        <p class="text-primary">021-234-4567</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4">
+      <div class="card p-3 h-100 text-center">
+        <h6>Urumpirai Branch</h6>
+        <p class="mb-1">Palaly Road, Urumpirai</p>
+        <p class="mb-1">Jaffna</p>
+        <p class="text-primary">021-345-5678</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Contact -->
+<div class="container mt-4" id="contact">
+  <h3 class="text-center">Contact Us</h3>
+
+  <div class="card p-3">
+    <p><b>📍 Address:</b> Vayavilan East,Vayavilan,Jaffna, Sri Lanka</p>
+    <p><b>📞 Phone:</b> +94 77 123 4567</p>
+    <p><b>📧 Email:</b> thenushop@gmail.com</p>
+
+    <form id="contactForm">
+      <input class="form-control mb-2" placeholder="Your Name" required>
+      <input class="form-control mb-2" placeholder="Email" required>
+      <textarea class="form-control mb-2" placeholder="Message" required></textarea>
+      <button class="btn btn-success w-100">Send Message</button>
+    </form>
+  </div>
+</div>
+
+<!-- Cart Modal -->
+<div class="modal fade" id="cartModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5>Your Cart</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <ul id="cartItems" class="list-group"></ul>
+        <h5 class="mt-3">Total: Rs<span id="total">0</span></h5>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-danger" id="clearCart">Clear</button>
+        <button class="btn btn-success">Checkout</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  © 2026 Thenu Smartphone Shop | All Rights Reserved
+</div>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+let cart = [];
+
+$(document).ready(function(){
+
+  $(".addCart").click(function(){
+    let name = $(this).data("name");
+    let price = parseInt($(this).data("price"));
+
+    cart.push({name, price});
+    updateCart();
+
+    alert(name + " added to cart!");
+  });
+
+  $("#viewCart").click(function(){
+    $("#cartModal").modal("show");
+  });
+
+  $("#clearCart").click(function(){
+    cart = [];
+    updateCart();
+  });
+
+  $("#contactForm").submit(function(e){
+    e.preventDefault();
+    alert("Message Sent!");
+  });
+
+});
+
+function updateCart(){
+  $("#cartItems").empty();
+  let total = 0;
+
+  cart.forEach(item => {
+    $("#cartItems").append(
+      `<li class="list-group-item d-flex justify-content-between">
+        ${item.name}
+        <span>$${item.price}</span>
+      </li>`
+    );
+    total += item.price;
+  });
+
+  $("#total").text(total);
+  $("#cartCount").text(cart.length);
+}
+
+</script>
+
+</body>
+</html>
